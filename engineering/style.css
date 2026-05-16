@@ -416,20 +416,25 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
    CHAPTERS (shared)
    ============================================================ */
 .chapter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  min-height: 100vh;
-  padding: calc(var(--nav-h) + 40px) 0 60px;
+  overflow: hidden;
 }
 
-/* Split layout — Ch 01 & 02 */
+/* Full-bleed split — image fills its half edge to edge */
 .chapter-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  align-items: center;
+  gap: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Text column — centred vertically with its own padding */
+.chapter-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(var(--nav-h) + 48px) 72px 64px;
 }
 
 .chapter-label {
@@ -472,31 +477,21 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   margin-top: 8px !important;
 }
 
-/* Image placeholder */
+/* Full-bleed image column */
 .chapter-image {
-  aspect-ratio: 4 / 5;
-  max-height: 58vh;
-  background: rgba(0,0,0,0.22);
-  border: 1px solid rgba(200,185,154,0.14);
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   overflow: hidden;
+  background: rgba(0,0,0,0.22);
 }
-.chapter-image::before {
-  content: '';
+
+.chapter-image img {
   position: absolute;
   inset: 0;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 18px,
-    rgba(200,185,154,0.03) 18px,
-    rgba(200,185,154,0.03) 19px
-  );
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .chapter-image span {
   font-family: var(--sans);
   font-size: 9px;
@@ -691,16 +686,19 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   .services-grid { grid-template-columns: 1fr; }
   .service-card  { padding: 28px 24px; }
 
-  .chapter { padding: calc(var(--nav-h) + 40px) 0 56px; }
-
   .chapter-inner {
     grid-template-columns: 1fr;
-    gap: 40px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .chapter-text {
+    padding: calc(var(--nav-h) + 40px) 32px 48px;
   }
 
   .chapter-image {
     aspect-ratio: 16 / 9;
-    max-height: 40vh;
+    min-height: 280px;
     width: 100%;
   }
 }
