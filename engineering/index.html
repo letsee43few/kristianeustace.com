@@ -20,9 +20,8 @@
     <div class="nav-inner container">
       <a href="#hero" class="nav-logo">Eustace Engineering Systems</a>
       <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#values">Values</a></li>
+        <li><a href="#journey-1">Our Story</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -34,17 +33,18 @@
   <!-- ── MOBILE MENU ── -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <ul role="list">
-      <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#values">Values</a></li>
+      <li><a href="#journey-1">Our Story</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 
   <main>
 
-    <!-- ── HERO ── -->
-    <section id="hero" class="hero">
+    <!-- ══════════════════════════════
+         1. HERO
+    ══════════════════════════════ -->
+    <section id="hero" class="snap-section hero">
       <div class="hero-inner container">
         <p class="eyebrow">Eustace Engineering Systems</p>
         <h1 class="hero-heading">
@@ -57,14 +57,17 @@
         </p>
         <div class="hero-ctas">
           <a href="#services" class="btn-primary">Our Services</a>
-          <a href="#about" class="btn-ghost">About the company &rarr;</a>
+          <a href="#journey-1" class="btn-ghost">Our Story &rarr;</a>
         </div>
       </div>
+      <div class="scroll-hint" aria-hidden="true"></div>
       <div class="hero-rule" aria-hidden="true"></div>
     </section>
 
-    <!-- ── SERVICES ── -->
-    <section id="services" class="services">
+    <!-- ══════════════════════════════
+         2. SERVICES
+    ══════════════════════════════ -->
+    <section id="services" class="snap-section services">
       <div class="container">
         <div class="section-header">
           <p class="section-eyebrow">What We Do</p>
@@ -93,76 +96,97 @@
               <span class="service-num" aria-hidden="true">03</span>
               <h3>Bespoke by Design</h3>
             </div>
-            <p>We don't produce off-the-shelf products. Every component is designed, built, and finished to order — because the mass market was never going to solve a problem it didn't know it had.</p>
+            <p>Not mass-market. Not made-to-order. Every Eustace Engineering Systems product is designed around a specific problem that the volume manufacturers never knew existed — and built to a standard they couldn't match if they did.</p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ── ABOUT ── -->
-    <section id="about" class="about">
+    <!-- ══════════════════════════════
+         3. CHAPTER 01 — THE ENGINEER
+    ══════════════════════════════ -->
+    <section id="journey-1" class="snap-section chapter" style="background: var(--dark1);">
+      <div class="container chapter-inner">
+
+        <div class="chapter-text fade-in">
+          <p class="chapter-label">Chapter 01</p>
+          <h2 class="chapter-title">Built for precision<br>from the start.</h2>
+          <div class="chapter-body">
+            <p>Engineering came first.</p>
+            <p>Years working across defence and aerospace — industries where zero margin for error is the baseline you work from. Components built to function in all environments, under all conditions. Mechanical design. Electrical systems. Without exception, every time.</p>
+          </div>
+        </div>
+
+        <div class="chapter-image fade-in" aria-label="Image placeholder">
+          <span>Image coming</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         4. CHAPTER 02 — THE PIVOT
+    ══════════════════════════════ -->
+    <section id="journey-2" class="snap-section chapter reverse" style="background: var(--dark2);">
+      <div class="container chapter-inner">
+
+        <div class="chapter-image fade-in" aria-label="Image placeholder">
+          <span>Image coming</span>
+        </div>
+
+        <div class="chapter-text fade-in">
+          <p class="chapter-label">Chapter 02</p>
+          <h2 class="chapter-title">A deliberate<br>departure.</h2>
+          <div class="chapter-body">
+            <p>At 30, the decision was made to step away from engineering entirely and pursue photography professionally. What followed were years moving between Thailand, Athens, and Milan — shooting across some of the most demanding creative environments in Europe.</p>
+            <p>The engineering mind didn't switch off. It just started observing something new.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         5. CHAPTER 03 — THE PROBLEM
+    ══════════════════════════════ -->
+    <section id="journey-3" class="snap-section chapter chapter-centered" style="background: var(--dark1);">
       <div class="container">
-        <div class="about-grid">
-
-          <div class="about-quote-col fade-in">
-            <blockquote>
-              <p>&ldquo;Every set I worked on, I encountered the same problem. Eventually I stopped waiting for someone else to fix it.&rdquo;</p>
-              <footer>
-                <cite>Kristian Eustace</cite>
-                <span>Founder, Eustace Engineering Systems</span>
-              </footer>
-            </blockquote>
+        <div class="chapter-centered-inner fade-in">
+          <p class="chapter-label">Chapter 03</p>
+          <h2 class="chapter-title">The same frustration.<br>Every single set.</h2>
+          <div class="chapter-body">
+            <p>Anyone who has worked professionally on set knows the feeling. It doesn't announce itself. It accumulates — quietly, persistently — until it becomes something you've simply learned to work around.</p>
+            <p>What it took to address wasn't obvious. Mechanical design. Electrical integration. Software built from nothing. Algorithms conceived, tested, discarded, rebuilt. The answer doesn't exist in any single discipline — it lives in the space where several of them meet.</p>
+            <p class="chapter-em">That space took years of training to reach.</p>
           </div>
-
-          <div class="about-body-col fade-in">
-            <p class="section-eyebrow light">About</p>
-            <h2>Engineering<br>from the inside out.</h2>
-            <div class="about-text">
-              <p>Kristian Eustace trained as a precision mechanical engineer — years designing and building components where the tolerance for error was zero. Working closely with complex electrical systems, he developed a discipline for how mechanical and electronic elements must operate in complete harmony.</p>
-              <p>At 30, he walked away from engineering to pursue something equally demanding. What followed was years spent in Thailand, Athens, and Milan — on set, behind the lens, working as a photographer in some of the most competitive creative environments in Europe.</p>
-              <p>On every set, the same frustration returned. A problem that no product had ever addressed. Not even close. The kind of problem that, once you see it clearly, you cannot unsee — and that took years of focused engineering work to finally solve.</p>
-              <p>That frustration became Eustace Engineering Systems.</p>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ── VALUES ── -->
-    <section id="values" class="values">
+    <!-- ══════════════════════════════
+         6. CHAPTER 04 — WHAT'S COMING
+    ══════════════════════════════ -->
+    <section id="journey-4" class="snap-section chapter chapter-centered tease" style="background: var(--dark2);">
       <div class="container">
-        <div class="section-header centered">
-          <p class="section-eyebrow">How We Work</p>
-          <h2 class="section-title">Built on three<br>non-negotiables.</h2>
-        </div>
-        <div class="values-grid">
-
-          <div class="value-item fade-in">
-            <span class="value-num" aria-hidden="true">01</span>
-            <h3>Precision</h3>
-            <p>Years of professional engineering taught us that tolerance is not a guideline. It is the difference between something that works and something that fails. Every Eustace Engineering Systems component is held to that standard.</p>
+        <div class="chapter-centered-inner fade-in">
+          <p class="chapter-label">Chapter 04</p>
+          <h2 class="chapter-title">The prototype exists.</h2>
+          <div class="chapter-body">
+            <p>Focused development. The kind of obsessive iteration that only makes sense when you've lived on both sides of the problem. The engineering is done. The prototype is built.</p>
+            <p class="chapter-tease">What comes next changes the way imaging professionals work.</p>
           </div>
-
-          <div class="value-item fade-in">
-            <span class="value-num" aria-hidden="true">02</span>
-            <h3>Purpose</h3>
-            <p>We don't design for a catalogue. Every component we make exists because a real problem on a real set demanded a better answer.</p>
+          <div class="tease-badge">
+            <span>Patent Pending &nbsp;&middot;&nbsp; Reveal Coming Soon</span>
           </div>
-
-          <div class="value-item fade-in">
-            <span class="value-num" aria-hidden="true">03</span>
-            <h3>Craft</h3>
-            <p>Engineering and photography share the same discipline: patience, obsession, and an unwillingness to accept good enough. Eustace Engineering Systems brings both to every component — from the first sketch to the finished part.</p>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ── CONTACT ── -->
-    <section id="contact" class="contact">
+    <!-- ══════════════════════════════
+         7. CONTACT
+    ══════════════════════════════ -->
+    <section id="contact" class="snap-section contact">
       <div class="container">
         <div class="contact-inner">
           <p class="section-eyebrow">Get In Touch</p>
@@ -188,17 +212,15 @@
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p class="footer-logo">Eustace Engineering Systems</p>
+          <p class="footer-copy">&copy; 2026 &middot; Europe &middot; All rights reserved</p>
+        </div>
+      </footer>
     </section>
 
   </main>
-
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p class="footer-logo">Eustace Engineering Systems</p>
-      <p class="footer-copy">&copy; 2026 &middot; Europe &middot; All rights reserved</p>
-    </div>
-  </footer>
 
   <script src="main.js"></script>
 </body>
