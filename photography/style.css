@@ -337,22 +337,16 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-/* Photo grid — Branding: mixed sizes */
+/* Column masonry — preserves natural image proportions */
 .photo-grid {
-  display: grid;
-  gap: 10px;
-}
-
-.photo-grid--branding {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-}
-
-.photo-grid--portraits {
-  grid-template-columns: repeat(3, 1fr);
+  column-count: 3;
+  column-gap: 10px;
 }
 
 .photo-item {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  display: block;
   background: rgba(0,0,0,0.06);
   border-radius: 2px;
   overflow: hidden;
@@ -369,8 +363,6 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
 
 .photo-item:hover { opacity: 0.88; }
 .photo-item:hover img { transform: scale(1.02); }
-
-.photo-item--wide { grid-column: span 2; }
 
 /* ── LIGHTBOX ── */
 .lightbox {
@@ -696,9 +688,9 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
 @media (max-width: 640px) {
   :root { --pad-h: 20px; }
 
-  .photo-grid--branding,
-  .photo-grid--portraits { grid-template-columns: 1fr 1fr; }
-  .photo-item--wide      { grid-column: span 2; }
+  .photo-grid { column-count: 2; }
+
+  .photo-grid { column-count: 1; }
 
   .blog-grid { grid-template-columns: 1fr; }
 
