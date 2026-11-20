@@ -119,7 +119,7 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 
   document.querySelectorAll('.fade-in').forEach(function (el) {
     observer.observe(el);
